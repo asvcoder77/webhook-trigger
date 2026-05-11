@@ -1,0 +1,13 @@
+<suite name="RegressionSuite" parallel="classes" thread-count="2">
+
+	<test name="RegressionTests">
+		<classes>
+			<class name="com.orange.tests.LoginTest" />
+			<class name="com.orange.tests.DashboardTest" />
+			<class name="com.orange.tests.TimeTest" />
+			<class name="com.orange.tests.RecruitmentTest" />
+			<class name="com.orange.tests.AddCandidateTest" />
+		</classes>
+	</test>
+
+</suite>
