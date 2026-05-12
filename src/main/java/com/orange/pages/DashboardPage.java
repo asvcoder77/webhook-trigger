@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.orange.base.BasePage;
 
 public class DashboardPage extends BasePage{
-	//hi hello
+	
 	@FindBy(css="button[size='large']")
 	private WebElement upgradebutton;
 	

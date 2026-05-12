@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orange.tests.AddCandidateTest">
+      <class name="com.orange.tests.DashboardTest">
         <methods>
           <include name="setUpConfig"/>
-          <include name="setUpAddCandidatePage"/>
-          <include name="verifyAddCandidate"/>
           <include name="quitDriver"/>
+          <include name="verifyDashboardScrollable"/>
           <include name="setDriver"/>
+          <include name="verifyTimeClickable"/>
+          <include name="setUpDashboard"/>
         </methods>
-      </class> <!-- com.orange.tests.AddCandidateTest -->
+      </class> <!-- com.orange.tests.DashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
