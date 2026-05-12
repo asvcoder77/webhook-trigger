@@ -3,56 +3,15 @@
 <suite thread-count="2" parallel="classes" name="Failed suite [RegressionSuite]">
   <test thread-count="2" parallel="classes" name="RegressionTests(failed)">
     <classes>
-      <class name="com.orange.tests.LoginTest">
-        <methods>
-          <include name="setUpConfig"/>
-          <include name="quitDriver"/>
-          <include name="setDriver"/>
-          <include name="verifyLoginSuccess"/>
-          <include name="verifyLoginPage"/>
-        </methods>
-      </class> <!-- com.orange.tests.LoginTest -->
-      <class name="com.orange.tests.DashboardTest">
-        <methods>
-          <include name="setUpConfig"/>
-          <include name="quitDriver"/>
-          <include name="verifyDashboardScrollable"/>
-          <include name="setDriver"/>
-          <include name="verifyTimeClickable"/>
-          <include name="setUpDashboard"/>
-        </methods>
-      </class> <!-- com.orange.tests.DashboardTest -->
       <class name="com.orange.tests.AddCandidateTest">
         <methods>
           <include name="setUpConfig"/>
-          <include name="verifyAddCandidatePage"/>
           <include name="setUpAddCandidatePage"/>
           <include name="quitDriver"/>
           <include name="verifyAddCandidate"/>
           <include name="setDriver"/>
         </methods>
       </class> <!-- com.orange.tests.AddCandidateTest -->
-      <class name="com.orange.tests.TimeTest">
-        <methods>
-          <include name="setUpConfig"/>
-          <include name="verifyTimePageLoaded"/>
-          <include name="quitDriver"/>
-          <include name="setDriver"/>
-          <include name="verifyMyRecords"/>
-          <include name="verifyAllElementsPresent"/>
-          <include name="setUpTimePage"/>
-        </methods>
-      </class> <!-- com.orange.tests.TimeTest -->
-      <class name="com.orange.tests.RecruitmentTest">
-        <methods>
-          <include name="setUpConfig"/>
-          <include name="quitDriver"/>
-          <include name="setUpRecruitmentPage"/>
-          <include name="setDriver"/>
-          <include name="verifyRecruitementPageLoaded"/>
-          <include name="verifySearchCandidate"/>
-        </methods>
-      </class> <!-- com.orange.tests.RecruitmentTest -->
     </classes>
   </test> <!-- RegressionTests(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

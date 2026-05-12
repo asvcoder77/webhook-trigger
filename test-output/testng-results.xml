@@ -1,281 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-12T21:31:39 IST" name="Default suite" finished-at="2026-05-12T21:33:09 IST" duration-ms="90328">
+  <suite started-at="2026-05-13T00:00:05 IST" name="RegressionSuite" finished-at="2026-05-13T00:01:01 IST" duration-ms="55618">
     <groups>
     </groups>
-    <test started-at="2026-05-12T21:31:39 IST" name="Default test" finished-at="2026-05-12T21:33:09 IST" duration-ms="90328">
-      <class name="com.orange.tests.DashboardTest">
-        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:31:39 IST" name="setUpConfig" finished-at="2026-05-12T21:31:39 IST" duration-ms="15" status="PASS">
+    <test started-at="2026-05-13T00:00:05 IST" name="RegressionTests" finished-at="2026-05-13T00:01:01 IST" duration-ms="55618">
+      <class name="com.orange.tests.LoginTest">
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:05 IST" name="setUpConfig" finished-at="2026-05-13T00:00:05 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfig -->
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:31:39 IST" name="setDriver" finished-at="2026-05-12T21:32:39 IST" duration-ms="59804" status="PASS">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:06 IST" name="setDriver" finished-at="2026-05-13T00:00:11 IST" duration-ms="5292" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5fad41be]]>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setUpDashboard()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:32:39 IST" name="setUpDashboard" finished-at="2026-05-12T21:33:09 IST" duration-ms="30465" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:356)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.orange.pages.LoginPage.login(LoginPage.java:26)
-at com.orange.tests.DashboardTest.setUpDashboard(DashboardTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyLoginPage()[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:11 IST" name="verifyLoginPage" description="Verify loginpage is displayed when URL is loaded" finished-at="2026-05-13T00:00:12 IST" duration-ms="695" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpDashboard -->
-        <test-method signature="verifyDashboardScrollable()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="verifyDashboardScrollable" description="Verify user is able to scroll to bottem in dashboard page" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:356)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.orange.pages.LoginPage.login(LoginPage.java:26)
-at com.orange.tests.DashboardTest.setUpDashboard(DashboardTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDashboardScrollable -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="quitDriver" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyLoginPage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:12 IST" name="quitDriver" finished-at="2026-05-13T00:00:12 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="setDriver" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:12 IST" name="setDriver" finished-at="2026-05-13T00:00:15 IST" duration-ms="3244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setUpDashboard()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="setUpDashboard" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyLoginSuccess()[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:15 IST" name="verifyLoginSuccess" description="Verify login works successfully and goes to dashboardpage" finished-at="2026-05-13T00:00:18 IST" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSuccess -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.LoginTest@11bd0f3b]" started-at="2026-05-13T00:00:18 IST" name="quitDriver" finished-at="2026-05-13T00:00:18 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.orange.tests.LoginTest -->
+      <class name="com.orange.tests.DashboardTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:06 IST" name="setDriver" finished-at="2026-05-13T00:00:12 IST" duration-ms="6179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpDashboard()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:12 IST" name="setUpDashboard" finished-at="2026-05-13T00:00:15 IST" duration-ms="2934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDashboard -->
-        <test-method signature="verifyTimeClickable()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="verifyTimeClickable" description="Verify time button is clicking navigating to Timepage" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=148.0.7778.97)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eccbc7f86c94d0444fef927ae4bb285f, findElement {value=username, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51396}, goog:processID: 32424, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51396/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eccbc7f86c94d0444fef927ae4bb285f
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:356)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.orange.pages.LoginPage.login(LoginPage.java:26)
-at com.orange.tests.DashboardTest.setUpDashboard(DashboardTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyDashboardScrollable()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:15 IST" name="verifyDashboardScrollable" description="Verify user is able to scroll to bottem in dashboard page" finished-at="2026-05-13T00:00:15 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardScrollable -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:15 IST" name="quitDriver" finished-at="2026-05-13T00:00:15 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:15 IST" name="setDriver" finished-at="2026-05-13T00:00:27 IST" duration-ms="12119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpDashboard()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:27 IST" name="setUpDashboard" finished-at="2026-05-13T00:00:30 IST" duration-ms="2807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDashboard -->
+        <test-method signature="verifyTimeClickable()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:30 IST" name="verifyTimeClickable" description="Verify time button is clicking navigating to Timepage" finished-at="2026-05-13T00:00:32 IST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTimeClickable -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.DashboardTest@61386958]" started-at="2026-05-12T21:33:09 IST" name="quitDriver" finished-at="2026-05-12T21:33:09 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.DashboardTest@5fd4f8f5]" started-at="2026-05-13T00:00:32 IST" name="quitDriver" finished-at="2026-05-13T00:00:32 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.orange.tests.DashboardTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.orange.tests.RecruitmentTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:32 IST" name="setDriver" finished-at="2026-05-13T00:00:35 IST" duration-ms="3298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpRecruitmentPage()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:35 IST" name="setUpRecruitmentPage" finished-at="2026-05-13T00:00:39 IST" duration-ms="3577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRecruitmentPage -->
+        <test-method signature="verifyRecruitementPageLoaded()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:39 IST" name="verifyRecruitementPageLoaded" finished-at="2026-05-13T00:00:39 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecruitementPageLoaded -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:39 IST" name="quitDriver" finished-at="2026-05-13T00:00:40 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:51 IST" name="setDriver" finished-at="2026-05-13T00:00:55 IST" duration-ms="3812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpRecruitmentPage()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:55 IST" name="setUpRecruitmentPage" finished-at="2026-05-13T00:00:58 IST" duration-ms="3603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRecruitmentPage -->
+        <test-method signature="verifySearchCandidate()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:00:58 IST" name="verifySearchCandidate" finished-at="2026-05-13T00:01:01 IST" depends-on-methods="com.orange.tests.RecruitmentTest.verifyRecruitementPageLoaded" duration-ms="2580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchCandidate -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.RecruitmentTest@550ee7e5]" started-at="2026-05-13T00:01:01 IST" name="quitDriver" finished-at="2026-05-13T00:01:01 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.orange.tests.RecruitmentTest -->
+      <class name="com.orange.tests.TimeTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:18 IST" name="setDriver" finished-at="2026-05-13T00:00:22 IST" duration-ms="3362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpTimePage()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:22 IST" name="setUpTimePage" finished-at="2026-05-13T00:00:25 IST" duration-ms="3840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTimePage -->
+        <test-method signature="verifyAllElementsPresent()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:25 IST" name="verifyAllElementsPresent" description="Verify all the UI elements are shown in page" finished-at="2026-05-13T00:00:26 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllElementsPresent -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:26 IST" name="quitDriver" finished-at="2026-05-13T00:00:26 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:26 IST" name="setDriver" finished-at="2026-05-13T00:00:38 IST" duration-ms="12048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpTimePage()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:38 IST" name="setUpTimePage" finished-at="2026-05-13T00:00:42 IST" duration-ms="4039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTimePage -->
+        <test-method signature="verifyMyRecords()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:42 IST" name="verifyMyRecords" description="Verify my records option is clickable" finished-at="2026-05-13T00:00:45 IST" duration-ms="2334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyRecords -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:45 IST" name="quitDriver" finished-at="2026-05-13T00:00:45 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:45 IST" name="setDriver" finished-at="2026-05-13T00:00:49 IST" duration-ms="3617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpTimePage()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:49 IST" name="setUpTimePage" finished-at="2026-05-13T00:00:53 IST" duration-ms="4363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTimePage -->
+        <test-method signature="verifyTimePageLoaded()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:53 IST" name="verifyTimePageLoaded" description="Verify timepage loaded successfully" finished-at="2026-05-13T00:00:54 IST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTimePageLoaded -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.TimeTest@a2431d0]" started-at="2026-05-13T00:00:54 IST" name="quitDriver" finished-at="2026-05-13T00:00:54 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.orange.tests.TimeTest -->
+      <class name="com.orange.tests.AddCandidateTest">
+        <test-method signature="verifyAddCandidate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orange.tests.AddCandidateTest@5f9b2141]" started-at="2026-05-13T00:00:40 IST" name="verifyAddCandidate" data-provider="candidateData" finished-at="2026-05-13T00:00:40 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: testdata\candidatesdetails.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: testdata\candidatesdetails.xlsx (The system cannot find the path specified)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.FileNotFoundException: testdata\candidatesdetails.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at com.orange.utils.ExcelUtil.getTestData(ExcelUtil.java:11)
+at com.orange.tests.AddCandidateTest.getData(AddCandidateTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+... 15 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddCandidate -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.orange.tests.AddCandidateTest@5f9b2141]" started-at="2026-05-13T00:00:41 IST" name="setDriver" finished-at="2026-05-13T00:00:44 IST" duration-ms="3662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19932c16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setUpAddCandidatePage()[pri:0, instance:com.orange.tests.AddCandidateTest@5f9b2141]" started-at="2026-05-13T00:00:44 IST" name="setUpAddCandidatePage" finished-at="2026-05-13T00:00:50 IST" duration-ms="5903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAddCandidatePage -->
+        <test-method signature="verifyAddCandidatePage()[pri:0, instance:com.orange.tests.AddCandidateTest@5f9b2141]" started-at="2026-05-13T00:00:50 IST" name="verifyAddCandidatePage" finished-at="2026-05-13T00:00:51 IST" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddCandidatePage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.orange.tests.AddCandidateTest@5f9b2141]" started-at="2026-05-13T00:00:51 IST" name="quitDriver" finished-at="2026-05-13T00:00:51 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.orange.tests.AddCandidateTest -->
+    </test> <!-- RegressionTests -->
+  </suite> <!-- RegressionSuite -->
+  <suite started-at="2026-05-13T00:01:01 IST" name="MasterSuite" finished-at="2026-05-13T00:01:01 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- MasterSuite -->
 </testng-results>
