@@ -10,7 +10,7 @@ import com.orange.base.BasePage;
 
 public class TimePage extends BasePage {
 	
-	@FindBy(xpath="(//span[@class=\"oxd-topbar-body-nav-tab-item\"])[2]")
+	@FindBy(xpath="(//span[@class=\"oxd-topbar-body-nav-tab-item\"])[2]1")
 	private WebElement attendance;
 	
 	@FindBy(xpath="(//span[@class=\"oxd-topbar-body-nav-tab-item\"])[1]")
