@@ -8,36 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">RegressionSuite</th></tr>
-<tr><td><a href="#t0">RegressionTests</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">55,618</td><td></td><td></td></tr>
-<tr><th colspan="8">MasterSuite</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,194</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orange.tests.AddCandidateTest</td><td><a href="#m0">verifyAddCandidate</a></td><td rowspan="1">1778610640253</td><td rowspan="1">0</td></tr><tr><th colspan="4">RegressionTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.orange.tests.AddCandidateTest</td><td><a href="#m1">verifyAddCandidatePage</a></td><td rowspan="1">1778610650671</td><td rowspan="1">599</td></tr><tr class="passedodd"><td rowspan="2">com.orange.tests.DashboardTest</td><td><a href="#m2">verifyDashboardScrollable</a></td><td rowspan="1">1778610615138</td><td rowspan="1">77</td></tr><tr class="passedodd"><td><a href="#m3">verifyTimeClickable</a></td><td rowspan="1">1778610630339</td><td rowspan="1">1939</td></tr><tr class="passedeven"><td rowspan="2">com.orange.tests.LoginTest</td><td><a href="#m4">verifyLoginPage</a></td><td rowspan="1">1778610611316</td><td rowspan="1">695</td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginSuccess</a></td><td rowspan="1">1778610615520</td><td rowspan="1">2966</td></tr><tr class="passedodd"><td rowspan="2">com.orange.tests.RecruitmentTest</td><td><a href="#m6">verifyRecruitementPageLoaded</a></td><td rowspan="1">1778610639369</td><td rowspan="1">623</td></tr><tr class="passedodd"><td><a href="#m7">verifySearchCandidate</a></td><td rowspan="1">1778610658864</td><td rowspan="1">2580</td></tr><tr class="passedeven"><td rowspan="3">com.orange.tests.TimeTest</td><td><a href="#m8">verifyAllElementsPresent</a></td><td rowspan="1">1778610625896</td><td rowspan="1">662</td></tr><tr class="passedeven"><td><a href="#m9">verifyMyRecords</a></td><td rowspan="1">1778610642843</td><td rowspan="1">2334</td></tr><tr class="passedeven"><td><a href="#m10">verifyTimePageLoaded</a></td><td rowspan="1">1778610653404</td><td rowspan="1">620</td></tr></tbody>
-<tbody><tr><th colspan="4">MasterSuite</th></tr></tbody></table>
-<h2>RegressionTests</h2><h3 id="m0">com.orange.tests.AddCandidateTest#verifyAddCandidate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.io.FileNotFoundException: testdata\candidatesdetails.xlsx (The system cannot find the path specified)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.FileNotFoundException: testdata\candidatesdetails.xlsx (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at com.orange.utils.ExcelUtil.getTestData(ExcelUtil.java:11)
-	at com.orange.tests.AddCandidateTest.getData(AddCandidateTest.java:37)
-	... 15 more
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.orange.tests.AddCandidateTest#verifyAddCandidatePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.orange.tests.DashboardTest#verifyDashboardScrollable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.orange.tests.DashboardTest#verifyTimeClickable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.orange.tests.LoginTest#verifyLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.orange.tests.LoginTest#verifyLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.orange.tests.RecruitmentTest#verifyRecruitementPageLoaded</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.orange.tests.RecruitmentTest#verifySearchCandidate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.orange.tests.TimeTest#verifyAllElementsPresent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.orange.tests.TimeTest#verifyMyRecords</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.orange.tests.TimeTest#verifyTimePageLoaded</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.orange.tests.LoginTest</td><td><a href="#m0">verifyLoginPage</a></td><td rowspan="1">1788432261735</td><td rowspan="1">1241</td></tr><tr class="passedeven"><td><a href="#m1">verifyLoginSuccess</a></td><td rowspan="1">1788432266488</td><td rowspan="1">3671</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.orange.tests.LoginTest#verifyLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orange.tests.LoginTest#verifyLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

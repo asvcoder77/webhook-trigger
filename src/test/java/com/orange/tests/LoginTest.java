@@ -1,11 +1,14 @@
 package com.orange.tests;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import com.orange.base.BaseTest;
 import com.orange.pages.DashboardPage;
 import com.orange.pages.LoginPage;
+import com.orange.listeners.RetryAnalyzer;
+
 
 public class LoginTest extends BaseTest {
 	@Test(description="Verify loginpage is displayed when URL is loaded")
@@ -15,7 +18,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertTrue(loginPage.isAt(),"Not on loginpage");
 		
 	}
-	@Test(description="Verify login works successfully and goes to dashboardpage")
+	@Test(retryAnalyzer = RetryAnalyzer.class,description="Verify login works successfully and goes to dashboardpage")
 	public void verifyLoginSuccess() {
 		LoginPage loginPage=new LoginPage();
 		//perform login
@@ -26,3 +29,4 @@ public class LoginTest extends BaseTest {
 	}
 
 }
+
