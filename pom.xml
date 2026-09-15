@@ -11,7 +11,7 @@
 	<properties>
 		<suiteXmlFile>src/test/resources/suites/regression.xml</suiteXmlFile>
 		<browser>chrome</browser>
-		<grid>true</grid>
+		<grid>false</grid>
 		<selenium.grid.hubHost>localhost</selenium.grid.hubHost>
 		<package.directory>${project.build.directory}/orange-docker-resources</package.directory>
 	</properties>
