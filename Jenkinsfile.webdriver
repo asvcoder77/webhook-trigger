@@ -9,11 +9,6 @@ pipeline {
             choices: ['chrome', 'firefox'],
             description: 'Browser used by the local WebDriver'
         )
-        booleanParam(
-            name: 'HEADLESS',
-            defaultValue: false,
-            description: 'Run Chrome opening a browser window'
-        )
     }
 
     options {
@@ -30,7 +25,7 @@ pipeline {
 
         stage('Run tests with local WebDriver') {
             steps {
-                bat "mvn clean test -Dbrowser=${params.BROWSER} -Dheadless=${params.HEADLESS} -Dselenium.grid.enabled=false"
+                bat "mvn clean test -Dbrowser=${params.BROWSER} -Dheadless=false -Dselenium.grid.enabled=false"
             }
         }
     }
