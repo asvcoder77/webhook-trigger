@@ -11,8 +11,8 @@ pipeline {
         )
         booleanParam(
             name: 'HEADLESS',
-            defaultValue: true,
-            description: 'Run Chrome without opening a browser window'
+            defaultValue: false,
+            description: 'Run Chrome opening a browser window'
         )
     }
 
