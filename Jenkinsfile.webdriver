@@ -1,0 +1,47 @@
+pipeline {
+    // The Jenkins agent must have Java 21, Maven, and the selected browser installed.
+    // WebDriverManager downloads the matching browser driver when the tests start.
+    agent any
+
+    parameters {
+        choice(
+            name: 'BROWSER',
+            choices: ['chrome', 'firefox'],
+            description: 'Browser used by the local WebDriver'
+        )
+        booleanParam(
+            name: 'HEADLESS',
+            defaultValue: true,
+            description: 'Run Chrome without opening a browser window'
+        )
+    }
+
+    options {
+        timestamps()
+        skipDefaultCheckout(true)
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run tests with local WebDriver') {
+            steps {
+                bat "mvn clean test -Dbrowser=${params.BROWSER} -Dheadless=${params.HEADLESS} -Dselenium.grid.enabled=false"
+            }
+        }
+    }
+
+    post {
+        always {
+            junit testResults: 'target/surefire-reports/*.xml', allowEmptyResults: true
+            archiveArtifacts(
+                artifacts: 'target/surefire-reports/**, target/allure-results/**',
+                allowEmptyArchive: true
+            )
+        }
+    }
+}

@@ -11,7 +11,7 @@
 	<properties>
 		<suiteXmlFile>src/test/resources/suites/regression.xml</suiteXmlFile>
 		<browser>chrome</browser>
-		<grid>false</grid>
+		<grid>true</grid>
 		<selenium.grid.hubHost>localhost</selenium.grid.hubHost>
 		<package.directory>${project.build.directory}/orange-docker-resources</package.directory>
 	</properties>
@@ -29,6 +29,13 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.12.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Allure adapter for TestNG -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.29.1</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- Source:
@@ -74,6 +81,12 @@
 	<build>
 		<finalName>orange-docker-asv</finalName>
 		<plugins>
+			<!-- Run "mvn allure:serve" or "mvn allure:report" after the tests. -->
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.15.0</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

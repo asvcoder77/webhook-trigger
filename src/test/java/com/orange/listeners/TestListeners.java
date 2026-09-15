@@ -6,6 +6,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import io.qameta.allure.Allure;
+
 import com.orange.utils.Constants;
 
 public class TestListeners implements ITestListener{
@@ -19,17 +21,12 @@ public class TestListeners implements ITestListener{
 			return;
 		}
 		TakesScreenshot driver = (TakesScreenshot)driverObj;
-		String screenshot = driver.getScreenshotAs(OutputType.BASE64);
+		byte[] screenshot = driver.getScreenshotAs(OutputType.BYTES);
+		Allure.addAttachment("Failure screenshot", "image/png", new java.io.ByteArrayInputStream(screenshot), ".png");
 		
 		String testName = result.getMethod().getMethodName();
 		Reporter.log("<b>Test Failed:</b> " + testName);
 		Reporter.log("<b>Reason:</b> " + result.getThrowable());
-		
-		String htmlImage = String.format(
-                "<br><img width='700px' src='data:image/png;base64,%s'/><br>",
-                screenshot);
-        Reporter.log(htmlImage);     
-        
 	}
 
 }
